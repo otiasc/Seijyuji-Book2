@@ -1,0 +1,844 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<title>Cross Summer Festival 2013</title>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Roboto:100,300' rel='stylesheet' type='text/css'>
+<style>
+* {
+  font-family: 'News Cycle';
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #999;
+  font-size: 1.083em;
+}
+a {
+  color:#999;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+a img {
+  border:none;
+}
+h2,
+h3 {
+  font-family: Roboto;
+  font-weight: 300;
+}
+h2 {
+  margin:0;
+  padding:2em 10px 10px 10px;
+  font-size:1.3em;
+}
+h3 {
+  font-size:1.1em;
+  padding:2em 0 0 0;
+}
+h1 {
+  font-family: Roboto;
+  font-weight: 100;
+  color: #FFF;
+  font-size: 2em;
+  margin:0.5em 0;
+}
+#top-menu {
+  display:none;
+  z-index:1000;
+}
+#top-menu ul {
+  text-align: center;
+}
+#top-menu li {
+  display: inline-block;
+  padding: 0;
+  width: 40%;
+}
+#container {
+  margin-top: -5em;
+  text-align: center;
+}
+.fixedwidth {
+  margin: 0 auto;
+  text-align: left;
+  clear: both;
+  padding:0 10px;
+}
+section {
+  float: none;
+  clear: both;
+  margin:5em 0;
+}
+section#title {
+  height:0;
+  width:100%;
+  padding-top:56.25%;
+  margin-top:-56.25%;
+  margin-bottom:66.25%;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
+}
+section#title #title-background {
+  vertical-align:top;
+  position:relative;
+  z-index:2;
+  width:100%;
+  margin-top:0;
+  padding-top:56.25%;
+  height:0;
+}
+section#title #title-background .videocontainer {
+  height:0;
+  width:100%;
+  padding-top:56.25%;
+  margin-top:-56.25%;
+  position:relative;
+  text-align:left;
+}
+section#title #title-background .videocontainer iframe {
+  height:100%;
+  width:100%;
+  border:none;
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:0;
+  left:0;
+}
+section#title #title-foreground {
+  position:relative;
+  margin-top:-56.25%;
+  z-index:10;
+  font-size:50%;
+}
+section#title img {
+  margin-top:10%;
+  max-width: 20%;
+}
+section#title #date {
+  margin: 0.6em;
+  font-size: 1em;
+  font-weight:100;
+  font-family:Roboto;
+}
+section#title #date div {
+  font-weight:100;
+  font-family:Roboto;
+}
+section#title #date small {
+  font-size: 0.5em;
+  font-weight:100;
+  font-family:Roboto;
+  margin:0;
+  padding:0;
+  text-transform:lowercase;
+  opacity:0.7;
+  -webkit-opacity:0.7;
+  -moz-opacity:0.7;
+}
+
+section#artists {
+  text-align: left;
+}
+section#artists #artists-list {
+  text-align: center;
+}
+section#artists #artists-list li {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  padding: 0;
+}
+section#artists #artists-amplied #artist-menu {
+  text-align: center;
+}
+section#artists #artists-amplied #artist-menu-image {
+  display: inline-block;
+  width: 240px;
+}
+section#artists #artists-amplied #artist-menu-image img {
+  max-width: 100%;
+}
+section#artists #artists-amplied #artist-menu-playlist {
+  display: inline-block;
+  width: 240px;
+  text-align: left;
+}
+section#artists #artists-amplied #artist-video {
+  width: 100%;
+  text-align: center;
+}
+section#artists #artists-amplied #artist-video iframe {
+  width: 240px;
+  height: 135px;
+}
+section#access {
+  margin:4em 0;
+  background: none;
+}
+section#access #access-image {
+  background: url('http://i80.servimg.com/u/f80/17/38/25/48/mephis10.jpg');
+  background-position: 20% top;
+  height: 300px;
+}
+section#access #access-message {
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 1.35em;
+  text-align:center;
+}
+section#access #access-message small {
+  color: #666;
+  font-style: normal;
+  font-size: 0.6em;
+}
+
+section#access #access-plans {
+  text-align:center;
+}
+section#access #access-plans img {
+  width:240px;
+}
+section#zones ul {
+  text-align:center;
+}
+section#zones li {
+  margin:0 10px;
+  width:220px;
+  display:inline-block;
+  vertical-align:top;
+  text-align:left;
+  font-size:0.8em;
+}
+section#zones li strong {
+  font-family:'News Cycle';
+  font-weight:700;
+}
+section#zones li.highlight img {
+  max-width:100%;
+}
+section#tickets ul {
+  text-align:center;
+}
+section#tickets li {
+  text-align:left;
+  font-size:0.8em;
+  padding:0 10px;
+  width:140px;
+  display:inline-block;
+  vertical-align:top;
+}
+section#bottom {
+  padding:2em 0;
+}
+section#bottom p {
+  font-size:0.7em;
+  text-align:center;
+}
+/*==================================
+
+SCREENS BIG-MOBILE
+
+==================================*/
+ @media all and (min-width:480px) and (min-device-width: 480px) {
+.fixedwidth {
+  max-width: 720px;
+}
+section#title #title-foreground {
+  font-size:90%;
+}
+section#title img {
+  margin-top:4%;
+  max-width:20%;
+}
+section#artists #artists-amplied #artist-video iframe {
+  width: 480px;
+  height: 270px;
+}
+}
+/*==================================
+
+SCREENS NARROW
+
+==================================*/
+ @media all and (min-width:740px) and (min-device-width: 740px) {
+.fixedwidth {
+  max-width:none;
+  padding:0;
+  width: 720px;
+}
+section#title #title-foreground {
+  font-size:125%;
+}
+section#title img {
+  margin-top:5%;
+  max-width:25%;
+}
+section#artists #artists-list li {
+  float: left;
+  width: 180px;
+  padding: 10px 0;
+  text-align: center;
+}
+section#artists #artists-amplied {
+  clear: both;
+  float: none;
+  padding: 10px 0;
+}
+section#artists #artists-amplied #artist-menu {
+  text-align: left;
+  width: 240px;
+  height:240px;
+  float: left;
+}
+section#artists #artists-amplied #artist-menu-image {
+  float: none;
+  width: 100%;
+  height:100%;
+}
+section#artists #artists-amplied #artist-menu-playlist {
+  display: none;
+  text-align: left;
+}
+
+
+section#artists #artists-amplied .artist-show-playlist #artist-menu-image {
+  display:none;
+}
+section#artists #artists-amplied .artist-show-playlist #artist-menu-playlist {
+  display: block;
+  text-align: left;
+}
+
+
+section#artists #artists-amplied #artist-video {
+  float: left;
+  width: 480px;
+  height: 240px;
+}
+section#artists #artists-amplied #artist-video iframe {
+  width: 100%;
+  height: 100%;
+}
+section#access {
+  background: url('http://i80.servimg.com/u/f80/17/38/25/48/mephis10.jpg') no-repeat;
+  background-position: 24% top;
+  height:600px;
+}
+section#access #access-image {
+  background: none;
+  display: none;
+}
+section#access #access-message {
+  color:#FFF;
+  width:60%;
+  padding:1em 0 1em 40%;
+  margin:0;
+}
+section#access #access-info {
+  color:#FFF;
+  padding-left:40%;
+  width:60%;
+  text-align:left;
+}
+section#access #access-plans {
+  padding-left:40%;
+  width:60%;
+}
+section#access #access-plans img {
+  width:40%;
+}
+
+section#zones li {
+  float:left;
+  display:block;
+  width:340px;
+  height:9em;
+  padding:0 0;
+}
+section#zones li.highlight {
+  height:29em;
+  border-bottom:#333 1px dotted;
+}
+section#tickets li {
+  float:left;
+  display:block;
+  width:220px;
+  padding:0 10px;
+}
+}
+/*==================================
+
+SCREENS NORMAL
+
+==================================*/
+ @media all and (min-width:980px) and (min-device-width: 980px) {
+.fixedwidth {
+  width: 960px;
+}
+section#title #title-foreground {
+  font-size:150%;
+}
+section#artists #artists-list li {
+  width: 240px;
+  padding: 10px 0;
+}
+section#artists #artists-amplied #artist-menu {
+  width: 320px;
+  height:320px;
+}
+section#artists #artists-amplied #artist-video {
+  width: 640px;
+  height: 320px;
+}
+section#access {
+  background-size:cover;
+  background-position: 20% top;
+}
+section#zones li {
+  width:220px;
+}
+section#zones li.highlight {
+  height:29em;
+}
+section#tickets li {
+  width:140px;
+  padding:0 10px;
+}
+}
+/*==================================
+
+SCREENS WIDE
+
+==================================*/
+ @media all and (min-width:1220px) and (min-device-width: 1220px) {
+.fixedwidth {
+  width: 1200px;
+}
+section#title #title-foreground {
+  font-size:200%;
+}
+section#title img {
+  margin-top:5%;
+  max-width:25%;
+}
+section#artists #artists-list li {
+  width: 150px;
+  padding: 10px 0;
+}
+section#artists #artists-amplied #artist-menu {
+  width: 400px;
+  height:400px;
+}
+section#artists #artists-amplied #artist-video {
+  width: 800px;
+  height: 400px;
+}
+section#access {
+  background-size:cover;
+  background-position: 15% top;
+}
+section#access #access-info {
+  padding-left:48%;
+  width:52%;
+}
+section#access #access-plans {
+  padding-left:48%;
+  width:52%;
+}
+section#zones li {
+  width:280px;
+}
+section#tickets li {
+  width:180px;
+  padding:0 10px;
+}
+}
+
+
+@media all and (min-width:480px) and (max-height:240px) {
+section#title #title-foreground {
+  font-size:85%;
+}
+section#title img {
+  margin-top:20px;
+  max-height:80px;
+}
+}
+
+@media all and (min-width:480px) and
+(min-height:241px) and
+(max-height:360px) {
+section#title #title-foreground {
+  font-size:90%;
+}
+section#title img {
+  margin-top:20px;
+  max-height:100px;
+}
+}
+@media all and
+(min-width:980px) and
+(min-height:361px) and
+(max-height:480px) {
+section#title #title-foreground {
+  font-size:125%;
+}
+section#title img {
+  margin-top:20px;
+  max-height:200px;
+}
+}
+@media all and
+(min-width:980px) and
+(min-height:481px) and
+(max-height:640px) {
+section#title #title-foreground {
+  font-size:150%;
+}
+section#title img {
+  margin-top:4%;
+  max-width:15%;
+}
+}
+@media all and
+(min-width:980px) and
+(min-height:641px) and
+(max-height:720px) {
+section#title #title-foreground {
+  font-size:175%;
+}
+section#title img {
+  margin-top:5%;
+  max-width:20%;
+}
+}
+/*
+@media all and (min-width:740px) and (min-device-width: 740px) {
+h1 {
+  font-size:2.75em;
+}
+}
+
+@media all and (min-width:980px) and (min-device-width: 980px) {
+h1 {
+  font-size:3.75em;
+}
+}
+@media all and (min-width:1220px) and (min-device-width: 1220px) {
+h1 {
+  font-size:4.75em;
+}
+}
+*/
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comollegar {
+  background: none;
+}
+.comollegar img {
+  max-width: 100%;
+}
+.clearfloat {
+  clear: both;
+  float: none;
+  line-height: 0;
+  font-size: 1px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	$('#artist-menu').mouseover(function(e) {
+		$(this).addClass('artist-show-playlist');
+	});
+	$('#artist-menu').mouseout(function(e) {
+		$(this).removeClass('artist-show-playlist');
+	});
+	
+	loadList('supercell');
+	
+	var timeout = setTimeout(function () {
+		$('#date').html('<div>El festival de inicio de verano de Seijyuji Gakuen. 6 de julio</div><small>Baja para saber más</small>')
+	}, 4500);
+	
+});
+var songsArray = new Array();
+songsArray[0]  = 'supercell|VXbXgblVh5Y|Hakushu Kassai Utaawase';
+songsArray[1]  = 'supercell|onVjiCfi0wQ|The Bravery';
+songsArray[2]  = 'supercell|JKN1gS1LNLI|Bokura no Ashiato';
+songsArray[3]  = 'supercell|nIrYjzHAEp0|My Dearest';
+songsArray[4]  = 'supercell|VF7NpKfiZuI|Ginirohikousen';
+songsArray[5]  = 'supercell|4KkLuRFtuCc|Utakata Hanabi';
+songsArray[6]  = 'supercell|eLPs_w-FepA|Kimino Shiranai Monogatari';
+songsArray[7]  = 'supercell|QiVkKYw8Iao|Sayonara Memories';
+songsArray[8]  = 'supercell|HQ-P0r2U8UU|Kokuhaku';
+songsArray[9]  = 'supercell|VXbXgblVh5Y|Hakushu Kassai Utaawase';
+
+songsArray[10] = 'tommyheavenly6|PY-kRbBu1_k|Monochrome Rainbow';
+songsArray[11] = 'tommyheavenly6|X5iLqPk7c5c|I\'m your devil –Halloween Remix–';
+songsArray[12] = 'tommyheavenly6|715azTvKohg|Hot Chocolat';
+songsArray[13] = 'tommyheavenly6|fEb8hAYXERk|RUNAWAY';
+songsArray[14] = 'tommyheavenly6|kDC0CG6GcKg|Never Ending Party Night～NEVER ENDING PARTY NIGHT-決して終わることのないパーティ-';
+songsArray[15] = 'tommyheavenly6|zIiMuB2XXbg|SUGAR ♥ ME';
+
+songsArray[16] = 'spyair|dspn1PsrD6k|0 GAME';
+songsArray[17] = 'spyair|ycuSQyBCEK4|Naked';
+
+songsArray[18] = 'gazette|g5f1gXBEybs|Ibitsu';
+
+songsArray[19] = 'nightmare|mX6wh8A6PgU|NAKED LOVE';
+
+songsArray[20] = 'girlsgeneration|6pA_Tou-DPI|THE BOYS';
+songsArray[21] = 'girlsgeneration|U7mPqycQ0tQ|Gee';
+songsArray[22] = 'girlsgeneration|IUqP1xzRZkw|PAPARAZZI';
+songsArray[23] = 'girlsgeneration|EXZxc8GSXnI|Dancing Queen';
+songsArray[24] = 'girlsgeneration|TGbwL8kSpEk|Oh!';
+songsArray[25] = 'girlsgeneration|JmM04_OgajU|TTS_TWINKLE';
+songsArray[26] = 'girlsgeneration|6ex1YkDXelo|LOVE&GIRLS';
+songsArray[27] = 'girlsgeneration|wq7ftOZBy0E|I GOT A BOY';
+songsArray[28] = 'girlsgeneration|kKAnYWNnYW8|ALL MY LOVE IS FOR YOU';
+songsArray[29] = 'girlsgeneration|Fzr2Nv8NTEE|MR. TAXI';
+
+songsArray[30] = 'ayahirano|kT8W5D4SGiY|Speed Star';
+
+songsArray[31] = 'tmrevolution|FXV9ZBhzZs0|Naked arms';
+songsArray[32] = 'tmrevolution|66XcQWgKUDY|FLAGS';
+
+var imagesArray = new Array()
+imagesArray[0] = 'supercell|http://i80.servimg.com/u/f80/17/38/25/48/superc10.jpg';
+imagesArray[1] = 'tommyheavenly6|http://i80.servimg.com/u/f80/17/38/25/48/tommyh10.jpg';
+imagesArray[2] = 'tmrevolution|http://i80.servimg.com/u/f80/17/38/25/48/tmrevo10.jpg';
+imagesArray[3] = 'spyair|http://i80.servimg.com/u/f80/17/38/25/48/spyair10.jpg';
+imagesArray[4] = 'girlsgeneration|http://i80.servimg.com/u/f80/17/38/25/48/girlsg10.jpg';
+imagesArray[5] = 'nightmare|http://i80.servimg.com/u/f80/17/38/25/48/nightm10.jpg';
+imagesArray[6] = 'gazette|http://i80.servimg.com/u/f80/17/38/25/48/gazett10.jpg';
+imagesArray[7] = 'ayahirano|http://i80.servimg.com/u/f80/17/38/25/48/ayahir10.jpg';
+
+
+
+var notFirstTime = 0;
+function loadList(who) {
+	var newList = new Array();
+	for (var i=0; i<songsArray.length; i++) {
+		if(songsArray[i].indexOf(who)==0) {
+			newList.push(songsArray[i]);
+		}
+	}
+	for (var k=0; k<8; k++) {
+		if (imagesArray[k].indexOf(who)==0) {
+			$('#artist-menu-image img').attr('src', imagesArray[k].split('|')[1]);
+		}
+	}
+	
+	$('#artists').attr('class', 'artist-chosen-' + who);
+	$('#artist-menu-playlist ol').html('');
+	
+	var songString = newList[0].split('|');
+	var videocode = songString[1];
+	var videotitle = songString[2];
+	var videoUrl = 'http://www.youtube.com/embed/' + videocode + '?autoplay=' + notFirstTime;
+	
+	loadVideo(videoUrl);
+	
+	for (var j=0; j<newList.length; j++) {
+		var songString = newList[j].split('|');
+		var videocode = songString[1];
+		var videotitle = songString[2];
+		var videoUrl = 'http://www.youtube.com/embed/' + videocode + '?autoplay=1'
+		
+		var newLi = $('<li></li>');
+		var newA = $('<a>').attr('href', videoUrl).text(videotitle).click(function() {
+			event.preventDefault();
+			
+			loadVideo(this)
+		})
+		newLi.append(newA).appendTo('#artist-menu-playlist ol');
+	}
+}
+
+function loadVideo(code) {
+	if (notFirstTime) {
+		// Vaciar vídeo superior
+		$('#title-background .videocontainer').html('');
+		
+		// Poner nuevo vídeo superior sin sonido
+		var newTitleVideo = $('<iframe>').attr('frameborder', 0).attr('src', 'http://www.youtube.com/embed/onVjiCfi0wQ?autoplay=0');
+		$('#title-background .videocontainer').append(newTitleVideo);
+	}
+	notFirstTime = 1;
+	
+	// Vaciar 
+	$('#artist-video').html('');
+	
+	// Poner nuevo vídeo grande de la canción seleccionada
+	
+	var newSongVideo = $('<iframe>').attr('frameborder', 0).attr('src', code);
+	$('#artist-video').append(newSongVideo);
+}
+</script>
+</head>
+
+<body>
+<div id="top-menu">
+  <ul>
+    <li>Artistas</li>
+    <li>Zonas</li>
+    <li>Cómo llegar</li>
+    <li>Tickets</li>
+  </ul>
+</div>
+<div id="container">
+  <section id="title">
+    <div id="title-background">
+      <div class="videocontainer">
+        <iframe width="420" height="345" src="http://www.youtube.com/embed/onVjiCfi0wQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="title-foreground">
+      <img src="http://i80.servimg.com/u/f80/17/38/25/48/logo10.png">
+      <h1>Cross Summer Festival 2013</h1>
+      <p id="date">activa el sonido y espera el vídeo</p>
+    </div>
+  </section>
+  <section id="artists">
+    <h2 class="fixedwidth">Artists</h2>
+    <ul class="fixedwidth" id="artists-list">
+      <li class="artist-supercell"><a href="javascript:void(0)" onClick="loadList('supercell')">Supercell</a></li>
+      <li class="artist-ayahirano"><a href="javascript:void(0)" onClick="loadList('ayahirano')">Aya Hirano</a></li>
+      <li class="artist-spyair"><a href="javascript:void(0)" onClick="loadList('spyair')">Spyair</a></li>
+      <li class="artist-tommyheavenly6"><a href="javascript:void(0)" onClick="loadList('tommyheavenly6')">TommyHeavenly6</a></li>
+      <li class="artist-tmrevolution"><a href="javascript:void(0)" onClick="loadList('tmrevolution')">T.M.Revolution</a></li>
+      <li class="artist-girlsgeneration"><a href="javascript:void(0)" onClick="loadList('girlsgeneration')">Girls&rsquo; Generation</a></li>
+      <li class="artist-nightmare"><a href="javascript:void(0)" onClick="loadList('nightmare')">Nightmare</a></li>
+      <li class="artist-gazette"><a href="javascript:void(0)" onClick="loadList('gazette')">Gazette</a></li>
+    </ul>
+    <div id="artists-amplied" class="art-supercell">
+      <div class="fixedwidth" id="">
+        <div id="artist-menu" class="">
+          <div id="artist-menu-image"> <img src="http://i80.servimg.com/u/f80/17/38/25/48/superc10.jpg"> </div>
+          <div id="artist-menu-playlist">
+            <ol>
+              <li><a href="javascript:void(0)">My dearest</a></li>
+            </ol>
+          </div>
+        </div>
+        <div id="artist-video">
+          <iframe name="artist-video-iframe" id="artist-video-iframe" src="http://player.vimeo.com/video/32124678?byline=0&amp;portrait=0&amp;color=ff0179&amp;autoplay=0" width="500" height="277" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
+      <br class="clearfloat">
+    </div>
+  </section>
+  <section id="access">
+    <div class="comollegar">
+      <div id="access-image">&nbsp;</div>
+      <div class="fixedwidth">
+        <p id="access-message">Abro mi mansión para ti&lt;3 – <small>J.Faust</small></p>
+        <div id="access-info">
+          <p>La mansión de Johann Faust se encuentra en la cima de la montaña Seijyuji.</p>
+          <p>Disponemos de un autobús especial gratuito para los asistentes desde la Estación de trenes Seijyuji Gakuen hasta la mansión</p>
+        </div>
+        <div id="access-plans">
+          <a href="http://i80.servimg.com/u/f80/17/38/25/48/plan-010.png"><img src="http://i80.servimg.com/u/f80/17/38/25/48/plan-010.png"></a>
+          <a href="http://i80.servimg.com/u/f80/17/38/25/48/plan-011.png"><img src="http://i80.servimg.com/u/f80/17/38/25/48/plan-011.png"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="zones" class="fixedwidth">
+    <h2>Zonas</h2>
+    <ul>
+      <li class="highlight">
+        <h3><strong>Music</strong>floor</h3>
+        <img src="http://i80.servimg.com/u/f80/17/38/25/48/music10.jpg">
+        <p>No pares de moverte al ritmo de la música traida por los mejores artistas del mundo.</p>
+      </li>
+      <li class="highlight">
+        <h3><strong>Drink</strong>corner</h3>
+        <img src="http://i80.servimg.com/u/f80/17/38/25/48/drink10.jpg">
+        <p>Tómate un respiro, recarga energía, coge vitaminas, embriágate de vitalidad. Hemos juntado las delicatessen de la cafetería de Seijyuji Gakuen con los top bartender del país</p>
+        <p><small>Prohibida la venta de alcohol a menores de 20 años</small></p>
+      </li>
+      <li class="highlight">
+        <h3><strong>Play</strong>zone</h3>
+        <img src="http://i80.servimg.com/u/f80/17/38/25/48/play10.jpg">
+        <p>Cantar las canciones de tus grupos favoritos sin que una máquina te diga que lo haces fatal es aburrido. Karaoke, billar y otros juegos te esperan</p>
+      </li>
+      <li class="highlight">
+        <h3><strong>Monjayaki</strong>spot</h3>
+        <img src="http://i80.servimg.com/u/f80/17/38/25/48/monjay10.jpg">
+        <p>La receta secreta del mejor puesto de Monja-yaki de Assiah y Gehenna llega a la Cross Festival</p>
+      </li>
+      <li>
+        <h3>Ropero</h3>
+        <p>1 prenda gratuita para cada asistente</p>
+      </li>
+      <li>
+        <h3>Baños</h3>
+        <p>Para imprevistos… y previstos ;)</p>
+      </li>
+      <li>
+        <h3>Terraza</h3>
+        <p>Relax e increibles vistas</p>
+      </li>
+      <li>
+        <h3>Primeros auxilios</h3>
+        <p>Ojalá no los necesites</p>
+      </li>
+    </ul>
+    <br class="clearfloat">
+  </section>
+  <section id="tickets" class="fixedwidth">
+  <h2>Tickets</h2>
+    <ul>
+      <li>
+        <h3>Adultos</h3>
+        <p>3.500¥</p>
+        <small>(incl. 1 consumición)</small>
+      </li>
+      <li>
+        <h3>Jóvenes</h3>
+        <p>2.000¥</p>
+       <small>(incl. 1 consumición)</small>
+      </li>
+      <li>
+        <h3>Alumnos Seijyuji</h3>
+        <p>1.500¥</p>
+        <small>(incl. 1 consumición)</small>
+      </li>
+      <li>
+        <h3>Grupos de 10</h3>
+        <p>15.000¥</p>
+      </li>
+      <li>
+        <h3>Con invitación</h3>
+        <p>0¥</p>
+      </li>
+      <li>
+        <h3>Okumura twins</h3>
+        <p>3.000.000¥</p>
+        <small>(por persona)</small>
+      </li>
+    </ul>
+    <br class="clearfloat">
+  </section>
+  <section id="bottom">
+    <div class="fixedwidth">
+      <p>Cross Summer Festival 2013, 78º Festival de inicio de Verano, división japonesa de la Santa Academia de la Vera Cruz, Seijyuji Gakuen</p>
+  </section>
+</div>
+</body>
+</html>
