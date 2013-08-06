@@ -135,7 +135,6 @@ section#title #date div {
 section#title #date small {
   font-size: 0.5em;
   font-weight:100;
-  font-family:Roboto;
   margin:0;
   padding:0;
   text-transform:lowercase;
@@ -557,6 +556,8 @@ ul {
   line-height: 0;
   font-size: 1px;
 }
+
+.artist-none 
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -569,10 +570,16 @@ $(document).ready(function(e) {
 	});
 	
 	loadList('supercell');
-	
-	var timeout = setTimeout(function () {
-		$('#date').html('<div>El festival de inicio de verano de Seijyuji Gakuen. 27 de julio</div><small>Baja para saber más</small>')
-	}, 4500);
+	var cuenta = 4;
+	var interval = setInterval(function () {
+		cuenta--;
+		$('#date').html('activa el sonido y espera el vídeo (' + cuenta + ')');
+		
+		if (cuenta<=0) {
+			clearInterval(interval);
+			$('#date').html('<div>El festival de inicio de verano de Seijyuji Gakuen. 28 de julio</div><small>Baja para saber más</small>');
+		}
+	}, 1000)
 	
 });
 var songsArray = new Array();
@@ -704,7 +711,7 @@ function loadVideo(code) {
   <section id="title">
     <div id="title-background">
       <div class="videocontainer">
-        <iframe width="420" height="345" src="http://www.youtube.com/embed/onVjiCfi0wQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="420" height="345" src="http://www.youtube.com/embed/onVjiCfi0wQ?autohide=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
     <div id="title-foreground">
@@ -715,6 +722,9 @@ function loadVideo(code) {
   </section>
   <section id="artists">
     <h2 class="fixedwidth">Artists</h2>
+    <div class="fixedwidth">
+      <p>(Pulsa un artista para escuchar algo de él)</p>
+    </div>
     <ul class="fixedwidth" id="artists-list">
       <li class="artist-supercell"><a href="javascript:void(0)" onClick="loadList('supercell')">Supercell</a></li>
       <li class="artist-ayahirano"><a href="javascript:void(0)" onClick="loadList('ayahirano')">Aya Hirano</a></li>
@@ -725,8 +735,8 @@ function loadVideo(code) {
       <li class="artist-nightmare"><a href="javascript:void(0)" onClick="loadList('nightmare')">Nightmare</a></li>
       <li class="artist-gazette"><a href="javascript:void(0)" onClick="loadList('gazette')">Gazette</a></li>
     </ul>
-    <div id="artists-amplied" class="art-supercell">
-      <div class="fixedwidth" id="">
+    <div id="artists-amplied">
+      <div class="fixedwidth">
         <div id="artist-menu" class="">
           <div id="artist-menu-image"> <img src="http://i80.servimg.com/u/f80/17/38/25/48/superc10.jpg"> </div>
           <div id="artist-menu-playlist">
@@ -746,14 +756,14 @@ function loadVideo(code) {
     <div class="comollegar">
       <div id="access-image">&nbsp;</div>
       <div class="fixedwidth">
-        <p id="access-message">Abro mi mansión para ti&lt;3 – <small>J.Faust</small></p>
+        <p id="access-message">Abro mi mansión para ti&lt;3 – <small>J.Favst</small></p>
         <div id="access-info">
-          <p>La mansión de Johann Faust se encuentra en la cima de la montaña Seijyuji.</p>
+          <p>La mansión de Johann Favst se encuentra en la cima de la montaña Seijyuji.</p>
           <p>Disponemos de un autobús especial gratuito para los asistentes desde la Estación de trenes Seijyuji Gakuen hasta la mansión</p>
         </div>
         <div id="access-plans">
-          <a href="http://i80.servimg.com/u/f80/17/38/25/48/plan-010.png"><img src="http://i80.servimg.com/u/f80/17/38/25/48/plan-010.png"></a>
-          <a href="http://i80.servimg.com/u/f80/17/38/25/48/plan-011.png"><img src="http://i80.servimg.com/u/f80/17/38/25/48/plan-011.png"></a>
+          <a href="http://i80.servimg.com/u/f80/17/38/25/48/plan-010.png" target="_blank"><img src="http://i80.servimg.com/u/f80/17/38/25/48/plan-010.png"></a>
+          <a href="http://i80.servimg.com/u/f80/17/38/25/48/plan-011.png" target="_blank"><img src="http://i80.servimg.com/u/f80/17/38/25/48/plan-011.png"></a>
         </div>
       </div>
     </div>
@@ -834,6 +844,9 @@ function loadVideo(code) {
       </li>
     </ul>
     <br class="clearfloat">
+    <div class="fixedwidth" style="padding:30px 0; text-align:center;">
+      <a href="http://seijyujigakuen.foroactivo.com/t278-summer-cross-festival" target="_blank">¡Compra ya las entradas!</a>
+    </div>
   </section>
   <section id="bottom">
     <div class="fixedwidth">
