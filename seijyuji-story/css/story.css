@@ -20,7 +20,7 @@ body {
   SPECIFIC > story > title
 ===============================*/
 #section-story-title-back {
-	background:url(/imgs/dawn.jpg) no-repeat center -15em;
+	background:url(../imgs/dawn.jpg) no-repeat center -15em;
 	background-size:auto;
 	width:100%;
 	position:absolute;
@@ -57,7 +57,7 @@ body {
 }
 
 #section-story-gateclose {
-	background:url(/imgs/medieval.jpg) no-repeat center center;
+	background:url(../imgs/medieval.jpg) no-repeat center center;
 	background-size:cover;
 	width:100%;
 	position:absolute;

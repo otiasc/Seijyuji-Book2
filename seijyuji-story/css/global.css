@@ -3,19 +3,19 @@
 	font-family:'Raleway';
 	font-style:normal;
 	font-weight:400;
-	src:local('Raleway'), local('Raleway'), url('/webfonts/Raleway/Raleway-Regular.ttf');
+	src:local('Raleway'), local('Raleway'), url('../webfonts/Raleway/Raleway-Regular.ttf');
 }
 @font-face {
 	font-family:'Lato';
 	font-style:normal;
 	font-weight:400;
-	src:local('Lato Regular'), local('Lato-Regular'), url('/webfonts/Lato/Lato-Regular.ttf');
+	src:local('Lato Regular'), local('Lato-Regular'), url('../webfonts/Lato/Lato-Regular.ttf');
 }
 @font-face {
 	font-family:'Fanwood Text';
 	font-style:normal;
 	font-weight:400;
-	src:local('Fanwood Text Regular'), local('Fanwood Text-Regular'), url('/webfonts/Fanwood_Text/FanwoodText-Regular.ttf');
+	src:local('Fanwood Text Regular'), local('Fanwood Text-Regular'), url('../webfonts/Fanwood_Text/FanwoodText-Regular.ttf');
 }
 /*===============================
   GENERAL > format
@@ -131,7 +131,3 @@ a:hover {
 /*===============================
   SPECIFIC > index > header
 ===============================*/
-#page-index {
-	background:url('http://3.bp.blogspot.com/-pOQ-Z536Iys/T_0CX9jllII/AAAAAAAADZg/VYayprqGvkU/s1600/dawn.jpg') no-repeat center -120px;
-	background-size:auto;
-}
