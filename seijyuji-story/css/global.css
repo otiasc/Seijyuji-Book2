@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+	font-family:'Raleway';
+	font-style:normal;
+	font-weight:400;
+	src:local('Raleway'), local('Raleway'), url('/webfonts/Raleway/Raleway-Regular.ttf');
+}
+@font-face {
+	font-family:'Lato';
+	font-style:normal;
+	font-weight:400;
+	src:local('Lato Regular'), local('Lato-Regular'), url('/webfonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+	font-family:'Fanwood Text';
+	font-style:normal;
+	font-weight:400;
+	src:local('Fanwood Text Regular'), local('Fanwood Text-Regular'), url('/webfonts/Fanwood_Text/FanwoodText-Regular.ttf');
+}
+/*===============================
+  GENERAL > format
+  font, padding, margin...
+===============================*/
+body {
+	font-family:'Raleway', sans-serif;
+	font-size:14px/100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Fanwood Text', serif;
+	letter-spacing:-0.1em;
+	color:#75004E;
+}
+a {
+	color:#75004E;
+	text-decoration:none;
+}
+a:hover {
+	color:#58CA00;
+}
+#container {
+	/*background:#999;*/
+	width: 90%;
+	min-height:3000px;
+	max-width:1600px;
+	margin:0 auto;
+}
+
+.container {
+	/*background:#999;*/
+	width: 90%;
+	min-height:3000px;
+	max-width:1600px;
+	margin:0 auto;
+}
+/*===============================
+  GENERAL > structure > header
+===============================*/
+#header {
+	height:120px;
+	margin:1em 0 0 0;
+}
+#header-logo,
+#header-logo-big,
+#header-menu1,
+#header-menu2,
+#header-user {
+	height:120px;
+	border-bottom:#75004E 1px dotted;
+}
+#header-logo-big {
+	float:left;
+	width:80.934061%;
+	margin:0 1.198891%;
+}
+
+#header-logo,
+#header-menu1 {
+	float:left;
+	width:14.267394%;
+	margin:0 1.198891%;
+}
+#header-menu2 {
+	float:left;
+	width:47.602219%;
+	margin:0 1.198891%;
+}
+#header-user {
+	float:left;
+	width:14.267394%;
+	margin:0 1.198891%;
+}
+
+#header-menu21,
+#header-menu22,
+#header-menu23 {
+	float:left;
+	width:29.969%;
+}
+#header-menu21 {
+	margin:0 2.524% 0 0;
+}
+#header-menu22 {
+	margin:0 2.524%;
+}
+#header-menu23 {
+	margin:0 0 0 2.524%;
+}
+
+
+
+#header-menu1 h2 {
+	margin:0 0 1em 0;
+}
+
+#header ul {
+	list-style:none;
+	font-size:0.83em;
+}
+#header ul li {
+	padding:2px 0 1px 0;
+}
+
+#header-logo img,
+#header-logo-big img {
+	width:auto;
+	max-height:100px;
+}
+
+
+
+/*===============================
+  SPECIFIC > index > header
+===============================*/
+#page-index {
+	background:url('http://3.bp.blogspot.com/-pOQ-Z536Iys/T_0CX9jllII/AAAAAAAADZg/VYayprqGvkU/s1600/dawn.jpg') no-repeat center -120px;
+	background-size:auto;
+}

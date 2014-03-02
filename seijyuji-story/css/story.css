@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body {
+	background:#000;
+}
+/*===============================
+  SPECIFIC > story > header
+===============================*/
+#header {
+	display:none;
+}
+#header-logo-big,
+#header-user {
+	height:60px;
+}
+#header-logo-big img {
+	max-height:50px;
+}
+
+/*===============================
+  SPECIFIC > story > title
+===============================*/
+#section-story-title-back {
+	background:url(/imgs/dawn.jpg) no-repeat center -15em;
+	background-size:auto;
+	width:100%;
+	position:absolute;
+	height:0;
+	padding:90% 0 0 0;
+	margin:0 0 0 0;
+	z-index:-1;
+}
+#section-story-title {
+	margin:0 1.198891%;
+	text-align:center;
+	padding:20em 0 0 0;
+}
+#section-story-title h1 {
+	color:#000;
+	font-size:3em;
+	text-transform:uppercase;
+	padding:0 0 2em 0;
+}
+
+#section-story-intro {
+	margin:-22em 1.198891% 0 1.198891%;
+	text-align:center;
+	padding:20em 0 0 0;
+}
+
+#section-story-intro p {
+	width:65%;
+	line-height:1.4em;
+	padding:1em 0 0 0;
+	margin:0 auto;
+	color:#723A06;
+	font-size:1.25em;
+}
+
+#section-story-gateclose {
+	background:url(/imgs/medieval.jpg) no-repeat center center;
+	background-size:cover;
+	width:100%;
+	position:absolute;
+	margin:20em 0 0 0;
+	height:17em;
+}
